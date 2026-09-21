@@ -7,15 +7,41 @@ export default {
   theme: {
     extend: {
       colors: {
+        primary: {
+          DEFAULT: '#FF0000',
+          50: '#fff1f1',
+          100: '#fee2e2',
+          200: '#fecaca',
+          300: '#fca5a5',
+          400: '#f87171',
+          500: '#ef4444',
+          600: '#FF0000',
+          700: '#dc2626',
+          800: '#b91c1c',
+          900: '#991b1b',
+        },
         brand: {
-          50: '#eef2ff',
-          100: '#e0e7ff',
-          500: '#6366f1',
-          600: '#4f46e5',
-          700: '#4338ca',
-          800: '#3730a3',
-          900: '#312e81',
+          50: '#fff1f1',
+          100: '#fee2e2',
+          200: '#fecaca',
+          500: '#ef4444',
+          600: '#FF0000',
+          700: '#dc2626',
+          800: '#b91c1c',
+          900: '#991b1b',
+        },
+        app: {
+          primary: '#FF0000',
+          background: '#F7F7F7',
+          darkBackground: '#121212',
+          textPrimary: '#181818',
+          textSecondary: '#707070',
+          border: '#E2E2E2',
+          success: '#2E7D32',
         }
+      },
+      borderRadius: {
+        'app': '14px',
       }
     },
   },

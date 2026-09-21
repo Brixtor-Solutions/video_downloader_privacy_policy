@@ -54,7 +54,7 @@ export default function Terms() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col selection:bg-indigo-100 selection:text-indigo-900">
+    <div className="min-h-screen bg-[#F7F7F7] text-[#181818] flex flex-col selection:bg-red-100 selection:text-red-900">
       {/* Top Advisory Bar */}
       <div className="bg-amber-50 border-b border-amber-200 px-4 py-2.5 text-xs sm:text-sm text-amber-900">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
@@ -73,16 +73,16 @@ export default function Terms() {
       </div>
 
       {/* Main Header / Navbar */}
-      <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-[#E2E2E2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Link to="/" className="flex items-center gap-2.5 group">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-600 flex items-center justify-center text-white shadow-md shadow-indigo-100 group-hover:scale-105 transition-transform">
+              <div className="w-10 h-10 rounded-[14px] bg-[#FF0000] flex items-center justify-center text-white shadow-md shadow-red-500/20 group-hover:scale-105 transition-transform">
                 <FileText className="w-5 h-5" />
               </div>
               <div>
-                <span className="font-bold text-slate-900 text-lg leading-tight block">{APP_NAME}</span>
-                <span className="text-xs text-slate-500 block">Legal & Terms Portal</span>
+                <span className="font-bold text-[#181818] text-lg leading-tight block">{APP_NAME}</span>
+                <span className="text-xs text-[#707070] block">Legal & Terms Portal</span>
               </div>
             </Link>
           </div>
@@ -90,19 +90,19 @@ export default function Terms() {
           <nav className="flex items-center gap-2 sm:gap-4">
             <Link
               to="/"
-              className="text-sm font-medium text-slate-600 hover:text-indigo-600 px-3 py-1.5 rounded-lg hover:bg-slate-100 transition-colors"
+              className="text-sm font-medium text-[#707070] hover:text-[#FF0000] px-3 py-1.5 rounded-[14px] hover:bg-black/5 transition-colors"
             >
               Home
             </Link>
             <Link
               to="/privacy"
-              className="text-sm font-medium text-slate-600 hover:text-indigo-600 px-3 py-1.5 rounded-lg hover:bg-slate-100 transition-colors"
+              className="text-sm font-medium text-[#707070] hover:text-[#FF0000] px-3 py-1.5 rounded-[14px] hover:bg-black/5 transition-colors"
             >
               Privacy Policy
             </Link>
             <Link
               to="/terms"
-              className="text-sm font-medium text-indigo-600 bg-indigo-50 px-3 py-1.5 rounded-lg"
+              className="text-sm font-medium text-[#FF0000] bg-red-50 px-3 py-1.5 rounded-[14px]"
             >
               Terms & Conditions
             </Link>
@@ -111,29 +111,29 @@ export default function Terms() {
       </header>
 
       {/* Hero / Document Header */}
-      <section className="bg-gradient-to-b from-white to-slate-50 border-b border-slate-200 py-10 sm:py-14">
+      <section className="bg-gradient-to-b from-white to-[#F7F7F7] border-b border-[#E2E2E2] py-10 sm:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200 mb-4">
-                <Scale className="w-3.5 h-3.5" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-red-50 text-red-700 border border-red-200 mb-4">
+                <Scale className="w-3.5 h-3.5 text-[#FF0000]" />
                 <span>Binding User Agreement & Disclaimers</span>
               </div>
-              <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight">
+              <h1 className="text-3xl sm:text-4xl font-extrabold text-[#181818] tracking-tight">
                 {termsContent.title}
               </h1>
-              <p className="mt-3 text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
+              <p className="mt-3 text-base sm:text-lg text-[#707070] max-w-2xl leading-relaxed">
                 {termsContent.subtitle}
               </p>
-              <div className="mt-4 flex flex-wrap items-center gap-4 text-xs sm:text-sm text-slate-500">
-                <span className="flex items-center gap-1.5 bg-slate-100 px-2.5 py-1 rounded-md font-medium text-slate-700">
-                  <Clock className="w-4 h-4 text-slate-500" />
+              <div className="mt-4 flex flex-wrap items-center gap-4 text-xs sm:text-sm text-[#707070]">
+                <span className="flex items-center gap-1.5 bg-white border border-[#E2E2E2] px-2.5 py-1 rounded-[8px] font-medium text-[#181818]">
+                  <Clock className="w-4 h-4 text-[#707070]" />
                   Last updated: {LAST_UPDATED}
                 </span>
                 <span>•</span>
-                <span>Operator: <strong className="text-slate-700">{OPERATOR}</strong></span>
+                <span>Operator: <strong className="text-[#181818]">{OPERATOR}</strong></span>
                 <span>•</span>
-                <span className="text-slate-500">Applicable to Android App & Backend Service</span>
+                <span className="text-[#707070]">Applicable to Android App & Backend Service</span>
               </div>
             </div>
 
@@ -141,7 +141,7 @@ export default function Terms() {
             <div className="flex items-center gap-2.5">
               <button
                 onClick={handleCopyLink}
-                className="inline-flex items-center gap-1.5 px-3.5 py-2 text-sm font-medium text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 transition-colors shadow-sm"
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 text-sm font-medium text-[#181818] bg-white border border-[#E2E2E2] rounded-[14px] hover:bg-[#F7F7F7] transition-colors shadow-sm"
                 title="Copy shareable link"
               >
                 <Share2 className="w-4 h-4" />
@@ -149,7 +149,7 @@ export default function Terms() {
               </button>
               <button
                 onClick={handlePrint}
-                className="inline-flex items-center gap-1.5 px-3.5 py-2 text-sm font-medium text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 transition-colors shadow-sm"
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 text-sm font-medium text-[#181818] bg-white border border-[#E2E2E2] rounded-[14px] hover:bg-[#F7F7F7] transition-colors shadow-sm"
                 title="Print or export to PDF"
               >
                 <Printer className="w-4 h-4" />
@@ -167,8 +167,8 @@ export default function Terms() {
           {/* Sticky Table of Contents (Desktop) */}
           <aside className="hidden lg:block lg:col-span-4 xl:col-span-3">
             <div className="sticky top-24 space-y-6">
-              <div className="bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
-                <h2 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 px-2">
+              <div className="bg-white rounded-[14px] border border-[#E2E2E2] p-4 shadow-sm">
+                <h2 className="text-xs font-bold uppercase tracking-wider text-[#707070] mb-3 px-2">
                   Terms Sections
                 </h2>
                 <nav className="space-y-1 max-h-[calc(100vh-14rem)] overflow-y-auto pr-1">
@@ -176,10 +176,10 @@ export default function Terms() {
                     <a
                       key={section.id}
                       href={`#${section.id}`}
-                      className={`block px-3 py-2 rounded-lg text-xs font-medium transition-colors ${
+                      className={`block px-3 py-2 rounded-[10px] text-xs font-medium transition-colors ${
                         activeSection === section.id
-                          ? 'bg-indigo-50 text-indigo-700 font-semibold'
-                          : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
+                          ? 'bg-red-50 text-[#FF0000] font-semibold'
+                          : 'text-[#707070] hover:bg-black/5 hover:text-[#181818]'
                       }`}
                     >
                       {section.title}
@@ -189,8 +189,8 @@ export default function Terms() {
               </div>
 
               {/* Legal Support Card */}
-              <div className="bg-gradient-to-br from-indigo-50 to-slate-50 rounded-xl border border-indigo-100 p-4 text-xs text-slate-600">
-                <div className="flex items-center gap-2 text-indigo-700 font-semibold mb-2">
+              <div className="bg-red-50/60 rounded-[14px] border border-red-100 p-4 text-xs text-[#707070]">
+                <div className="flex items-center gap-2 text-[#FF0000] font-semibold mb-2">
                   <Mail className="w-4 h-4" />
                   <span>Legal & Inquiries</span>
                 </div>
@@ -199,7 +199,7 @@ export default function Terms() {
                 </p>
                 <a
                   href={`mailto:${CONTACT_EMAIL}`}
-                  className="block text-center bg-white border border-indigo-200 text-indigo-700 font-medium py-1.5 px-3 rounded-lg hover:bg-indigo-50 transition-colors truncate"
+                  className="block text-center bg-white border border-red-200 text-[#FF0000] font-medium py-1.5 px-3 rounded-[10px] hover:bg-red-50 transition-colors truncate"
                 >
                   {CONTACT_EMAIL}
                 </a>
@@ -211,16 +211,16 @@ export default function Terms() {
           <article className="lg:col-span-8 xl:col-span-9 space-y-10">
 
             {/* Critical Disclaimers Banner */}
-            <div className="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 shadow-sm">
+            <div className="bg-[#121212] text-white rounded-[14px] p-6 sm:p-8 shadow-sm border border-neutral-800">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 border border-indigo-400/30 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-[10px] bg-red-600/20 text-red-400 border border-red-500/30 flex items-center justify-center shrink-0">
                   <ShieldAlert className="w-5 h-5" />
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-lg font-bold text-white">
                     Summary of Fundamental Legal Commitments
                   </h3>
-                  <p className="text-sm text-slate-300 leading-relaxed">
+                  <p className="text-sm text-neutral-300 leading-relaxed">
                     By accessing {APP_NAME}, you acknowledge that you are solely responsible for verifying that you have the lawful right or authorization to download any requested media. {APP_NAME} does not endorse copyright infringement and operates strictly as an ephemeral utility tool.
                   </p>
                 </div>
@@ -232,22 +232,22 @@ export default function Terms() {
               <section
                 key={section.id}
                 id={section.id}
-                className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm scroll-mt-24"
+                className="bg-white rounded-[14px] border border-[#E2E2E2] p-6 sm:p-8 shadow-sm scroll-mt-24"
               >
-                <div className="flex items-center justify-between border-b border-slate-100 pb-4 mb-5">
-                  <h2 className="text-xl sm:text-2xl font-bold text-slate-950 tracking-tight">
+                <div className="flex items-center justify-between border-b border-[#E2E2E2] pb-4 mb-5">
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#181818] tracking-tight">
                     {section.title}
                   </h2>
                   <a
                     href={`#${section.id}`}
-                    className="text-xs font-mono text-slate-400 hover:text-indigo-600"
+                    className="text-xs font-mono text-[#707070] hover:text-[#FF0000]"
                     title="Anchor link"
                   >
                     #{section.id}
                   </a>
                 </div>
 
-                <div className="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
+                <div className="space-y-4 text-sm sm:text-base text-[#181818] leading-relaxed">
                   {section.content.map((paragraph, idx) => (
                     <p
                       key={idx}
@@ -257,7 +257,7 @@ export default function Terms() {
                         paragraph.startsWith('WE DO NOT WARRANT') ||
                         paragraph.startsWith('TO THE MAXIMUM EXTENT') ||
                         paragraph.startsWith('UNDER NO CIRCUMSTANCES')
-                          ? 'font-medium text-slate-800 text-xs sm:text-sm tracking-wide bg-slate-50 p-4 rounded-xl border border-slate-200 font-mono'
+                          ? 'font-medium text-[#181818] text-xs sm:text-sm tracking-wide bg-[#F7F7F7] p-4 rounded-[14px] border border-[#E2E2E2] font-mono'
                           : ''
                       }
                     >
@@ -268,8 +268,8 @@ export default function Terms() {
                   {section.list && (
                     <ul className="space-y-2.5 mt-4 pt-2">
                       {section.list.map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-2.5 text-slate-700">
-                          <CheckCircle2 className="w-4 h-4 text-indigo-500 mt-1 shrink-0" />
+                        <li key={idx} className="flex items-start gap-2.5 text-[#181818]">
+                          <CheckCircle2 className="w-4 h-4 text-[#2E7D32] mt-1 shrink-0" />
                           <span>{item}</span>
                         </li>
                       ))}
@@ -280,16 +280,16 @@ export default function Terms() {
             ))}
 
             {/* Bottom Card: Link to Privacy Policy */}
-            <div className="bg-gradient-to-r from-slate-900 to-indigo-950 text-white rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-md">
+            <div className="bg-gradient-to-r from-[#121212] to-neutral-900 text-white rounded-[14px] p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-md border border-neutral-800">
               <div>
                 <h3 className="text-lg font-bold">Review Our Privacy Disclosures</h3>
-                <p className="text-sm text-slate-300 mt-1 max-w-xl">
+                <p className="text-sm text-neutral-300 mt-1 max-w-xl">
                   Discover how {APP_NAME} handles URLs, transient server processing via FastAPI & yt-dlp, and protects your privacy without user accounts.
                 </p>
               </div>
               <Link
                 to="/privacy"
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold text-sm rounded-xl transition-colors shrink-0 shadow-sm"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#FF0000] hover:bg-red-700 text-white font-semibold text-sm rounded-[14px] transition-colors shrink-0 shadow-sm"
               >
                 <span>Read Privacy Policy</span>
                 <ArrowRight className="w-4 h-4" />
@@ -301,24 +301,24 @@ export default function Terms() {
       </main>
 
       {/* Standard Footer */}
-      <footer className="bg-white border-t border-slate-200 mt-20 py-10 text-sm text-slate-500">
+      <footer className="bg-white border-t border-[#E2E2E2] mt-20 py-10 text-sm text-[#707070]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pb-6 border-b border-slate-100">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pb-6 border-b border-[#E2E2E2]">
             <div className="flex items-center gap-2">
-              <div className="w-6 h-6 rounded-md bg-indigo-600 flex items-center justify-center text-white">
+              <div className="w-6 h-6 rounded-[6px] bg-[#FF0000] flex items-center justify-center text-white">
                 <FileText className="w-3.5 h-3.5" />
               </div>
-              <span className="font-bold text-slate-800">{APP_NAME}</span>
+              <span className="font-bold text-[#181818]">{APP_NAME}</span>
               <span>— Operated by {OPERATOR}</span>
             </div>
             <div className="flex items-center gap-6 text-sm">
-              <Link to="/" className="hover:text-indigo-600 transition-colors">Home</Link>
-              <Link to="/privacy" className="hover:text-indigo-600 transition-colors">Privacy Policy</Link>
-              <Link to="/terms" className="hover:text-indigo-600 transition-colors font-semibold text-indigo-600">Terms & Conditions</Link>
-              <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-indigo-600 transition-colors">Contact</a>
+              <Link to="/" className="hover:text-[#FF0000] transition-colors">Home</Link>
+              <Link to="/privacy" className="hover:text-[#FF0000] transition-colors">Privacy Policy</Link>
+              <Link to="/terms" className="hover:text-[#FF0000] transition-colors font-semibold text-[#FF0000]">Terms & Conditions</Link>
+              <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-[#FF0000] transition-colors">Contact</a>
             </div>
           </div>
-          <div className="mt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+          <div className="mt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-[#707070]">
             <p>© {new Date().getFullYear()} {OPERATOR}. All rights reserved.</p>
             <p>{LEGAL_DISCLAIMER}</p>
           </div>
